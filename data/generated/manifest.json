@@ -1,0 +1,95 @@
+{
+  "generator": "yottaflex-finance-management",
+  "seed": 20261022,
+  "users_requested": 1000,
+  "users_generated": 1000,
+  "transactions_requested": 500000,
+  "months_requested": 12,
+  "months": [
+    "2025-11",
+    "2025-12",
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04",
+    "2026-05",
+    "2026-06",
+    "2026-07",
+    "2026-08",
+    "2026-09",
+    "2026-10"
+  ],
+  "currency": "INR",
+  "amount_convention": "expenses negative; income/refunds positive",
+  "ground_truth_directory": "data\\ground_truth",
+  "files": {
+    ".gitkeep": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "accounts.csv": {
+      "sha256": "400866482b72d2eb13efd92cfc7d9f28389487840497b7ba9c270796d57571a8",
+      "bytes": 99049
+    },
+    "budget_comparison.csv": {
+      "sha256": "1bcd0f9ea4c994a73bd2bdfe4119d776dc2e67423b3cb52b0355f1acc2a33ce4",
+      "bytes": 11914923
+    },
+    "budget_exceptions.csv": {
+      "sha256": "71d9b3436225314731f036ba061ec59e26867a1eeb6108cf6e46475f5724348d",
+      "bytes": 7398991
+    },
+    "budgets.csv": {
+      "sha256": "2d3114e22fa2e7cb7507007c5fd9ddbe40ecbda631be879613c6d3d176f6b3b0",
+      "bytes": 8077368
+    },
+    "categories.csv": {
+      "sha256": "52fd02c1ab368b32aea8fbdf906b8ede56d98ad16588d46bb19b4409fbb175a9",
+      "bytes": 523
+    },
+    "categorized_transactions.csv": {
+      "sha256": "d1cd12f194b855b4cb53d8501d01abe24ad8f8ca577318ade170613819eaa4c1",
+      "bytes": 136249219
+    },
+    "category_confusion_matrix.csv": {
+      "sha256": "ba872b4b2be9e376401c05081ab3196d967ffc501fe83dab79695617571c6cd7",
+      "bytes": 376
+    },
+    "category_rules.csv": {
+      "sha256": "7c4f132edb5de3c906a28b83ea7a42647cb12e5e9be549be406fef4411d7fae0",
+      "bytes": 856
+    },
+    "detected_recurring_payments.csv": {
+      "sha256": "75bed67d3194ce922485389dc18864d110acb15abf942ff7666446c15cc7f333",
+      "bytes": 295121
+    },
+    "household_spending.csv": {
+      "sha256": "48b8a62d71b647bfcc79091cc59beb8e737ea7000f8c8ac9718fff6163adf541",
+      "bytes": 3948937
+    },
+    "insights.csv": {
+      "sha256": "0a0696c7d4d48af565681e123cd894fb435b9432af784c71cea86d70dcb9f83a",
+      "bytes": 181948
+    },
+    "merchants.csv": {
+      "sha256": "b88c952af078dbba2687eb2e64f0d29a76274d100dfbea1a34ca083e17ce9353",
+      "bytes": 708
+    },
+    "recurring_cycle_exceptions.csv": {
+      "sha256": "23b8c62cdad45809fd5c4c450ebee23e005f368193b914b8a30a531f3f66d962",
+      "bytes": 42236
+    },
+    "recurring_series.csv": {
+      "sha256": "0bee32d0d1af794e756ef5b73ed58d1a83d338ce06da0cde59e6b3a8cc9bcbbb",
+      "bytes": 298131
+    },
+    "transactions.csv": {
+      "sha256": "20aa546b0d410d3c8e17d5d42d0aa1bf96ec766b9e8ee8ea293c62d93d200f3f",
+      "bytes": 79506438
+    },
+    "users.csv": {
+      "sha256": "12c615ff0b1c6067805de98a29c06db8660853002e9cfaf120cf9f9aa0062f7f",
+      "bytes": 56051
+    }
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "summary": {
+    "ground_truth_rows": 500000,
+    "prediction_rows": 500000,
+    "matched_transaction_ids": 500000,
+    "extra_prediction_ids": 0,
+    "correct_predictions": 500000,
+    "incorrect_predictions": 0,
+    "accuracy": 1.0,
+    "coverage": 1.0,
+    "classified_transactions": 500000,
+    "unclassified_transactions": 0,
+    "macro_precision": 1.0,
+    "macro_recall": 1.0,
+    "macro_f1": 1.0
+  },
+  "per_category": {
+    "CAT-DINING": {
+      "support": 46933,
+      "predicted_count": 46933,
+      "correct": 46933,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "CAT-GROCERIES": {
+      "support": 47343,
+      "predicted_count": 47343,
+      "correct": 47343,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "CAT-HEALTH": {
+      "support": 47320,
+      "predicted_count": 47320,
+      "correct": 47320,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "CAT-INCOME": {
+      "support": 30538,
+      "predicted_count": 30538,
+      "correct": 30538,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "CAT-RENT": {
+      "support": 11887,
+      "predicted_count": 11887,
+      "correct": 11887,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "CAT-SHOPPING": {
+      "support": 47015,
+      "predicted_count": 47015,
+      "correct": 47015,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "CAT-SUBSCRIPTIONS": {
+      "support": 16449,
+      "predicted_count": 16449,
+      "correct": 16449,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "CAT-TRANSFER": {
+      "support": 158176,
+      "predicted_count": 158176,
+      "correct": 158176,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "CAT-TRANSPORT": {
+      "support": 47081,
+      "predicted_count": 47081,
+      "correct": 47081,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "CAT-UTILITIES": {
+      "support": 47258,
+      "predicted_count": 47258,
+      "correct": 47258,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    }
+  },
+  "issue_type_counts": {
+    "internal_transfer": 158176,
+    "refund": 27698,
+    "timezone_boundary": 1,
+    "": 314125
+  },
+  "expected_decision_counts": {
+    "Exclude internal transfers from household spending.": 158176,
+    "Treat as a refund; reduce matched-category net spending.": 27698,
+    "Preserve offset and apply documented timezone policy.": 1,
+    "Use assigned ground-truth category.": 314125
+  },
+  "confusion_matrix": {
+    "CAT-DINING": {
+      "CAT-DINING": 46933
+    },
+    "CAT-GROCERIES": {
+      "CAT-GROCERIES": 47343
+    },
+    "CAT-HEALTH": {
+      "CAT-HEALTH": 47320
+    },
+    "CAT-INCOME": {
+      "CAT-INCOME": 30538
+    },
+    "CAT-RENT": {
+      "CAT-RENT": 11887
+    },
+    "CAT-SHOPPING": {
+      "CAT-SHOPPING": 47015
+    },
+    "CAT-SUBSCRIPTIONS": {
+      "CAT-SUBSCRIPTIONS": 16449
+    },
+    "CAT-TRANSFER": {
+      "CAT-TRANSFER": 158176
+    },
+    "CAT-TRANSPORT": {
+      "CAT-TRANSPORT": 47081
+    },
+    "CAT-UTILITIES": {
+      "CAT-UTILITIES": 47258
+    }
+  }
+}

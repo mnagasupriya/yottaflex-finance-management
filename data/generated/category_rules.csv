@@ -1,0 +1,11 @@
+rule_id,merchant_id,category_id,match_type,priority,effective_from,effective_to,active
+RULE-000001,MER-000001,CAT-GROCERIES,alias_or_exact_name,99,2025-11-01,,True
+RULE-000002,MER-000002,CAT-RENT,alias_or_exact_name,98,2025-11-01,,True
+RULE-000003,MER-000003,CAT-UTILITIES,alias_or_exact_name,97,2025-11-01,,True
+RULE-000004,MER-000004,CAT-TRANSPORT,alias_or_exact_name,96,2025-11-01,,True
+RULE-000005,MER-000005,CAT-SUBSCRIPTIONS,alias_or_exact_name,95,2025-11-01,,True
+RULE-000006,MER-000006,CAT-HEALTH,alias_or_exact_name,94,2025-11-01,,True
+RULE-000007,MER-000007,CAT-DINING,alias_or_exact_name,93,2025-11-01,,True
+RULE-000008,MER-000008,CAT-SHOPPING,alias_or_exact_name,92,2025-11-01,,True
+RULE-000009,MER-000009,CAT-INCOME,alias_or_exact_name,91,2025-11-01,,True
+RULE-000010,MER-000010,CAT-TRANSFER,alias_or_exact_name,90,2025-11-01,,True

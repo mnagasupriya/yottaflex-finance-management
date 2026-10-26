@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "row_counts": {
+    "users": 1000,
+    "accounts": 2000,
+    "merchants": 10,
+    "categories": 10,
+    "rules": 10,
+    "budgets": 96000,
+    "recurring": 3000,
+    "transactions": 500000,
+    "ground_truth_labels": 500000,
+    "anomaly_cases": 185879
+  },
+  "errors": [],
+  "warnings": []
+}

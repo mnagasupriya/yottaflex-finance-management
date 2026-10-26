@@ -1,0 +1,11 @@
+category_id,category_name,category_code,category_type,active
+CAT-GROCERIES,Groceries,groceries,expense,True
+CAT-RENT,Rent,rent,expense,True
+CAT-UTILITIES,Utilities,utilities,expense,True
+CAT-TRANSPORT,Transport,transport,expense,True
+CAT-SUBSCRIPTIONS,Subscriptions,subscriptions,expense,True
+CAT-HEALTH,Healthcare,healthcare,expense,True
+CAT-DINING,Dining,dining,expense,True
+CAT-SHOPPING,Shopping,shopping,expense,True
+CAT-INCOME,Income,income,income,True
+CAT-TRANSFER,Internal Transfer,transfer,transfer,True

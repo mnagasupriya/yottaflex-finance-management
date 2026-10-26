@@ -1,0 +1,11 @@
+merchant_id,merchant_name,default_category_id,aliases,active
+MER-000001,FreshMart,CAT-GROCERIES,Fresh Mart|FRESHMART,True
+MER-000002,HomeRent,CAT-RENT,Home Rent|HOMERENT,True
+MER-000003,PowerGrid,CAT-UTILITIES,Power Grid|POWERGRID,True
+MER-000004,CityTransit,CAT-TRANSPORT,City Transit|CITYTRANSIT,True
+MER-000005,StreamBox,CAT-SUBSCRIPTIONS,Stream Box|STREAMBOX,True
+MER-000006,HealthPlus,CAT-HEALTH,Health Plus|HEALTHPLUS,True
+MER-000007,FoodCorner,CAT-DINING,Food Corner|FOODCORNER,True
+MER-000008,ShopWorld,CAT-SHOPPING,Shop World|SHOPWORLD,True
+MER-000009,Employer Payroll,CAT-INCOME,Payroll|Salary Credit,True
+MER-000010,Own Account Transfer,CAT-TRANSFER,Self Transfer|Account Transfer,True
