@@ -97,7 +97,7 @@ yottaflex-finance-management/
 
 ```bash
 git clone https://github.com/mnagasupriya/yottaflex-finance-management.git
-cd yottaflex-finance-management
+cd yottaflex-finance-management-main
 ```
 
 ### 2. Create a virtual environment
