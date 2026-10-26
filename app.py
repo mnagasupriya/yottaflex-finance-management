@@ -27,6 +27,208 @@ st.set_page_config(
 # Styling
 # --------------------------------------------------
 
+
+# --------------------------------------------------
+# Styling - Glassmorphism UI
+# --------------------------------------------------
+
+st.markdown(
+    """
+    <style>
+    /* Main application background */
+    .stApp {
+        background:
+            radial-gradient(ellipse at 10% 10%,
+                rgba(120, 119, 255, 0.20), transparent 38%),
+            radial-gradient(ellipse at 90% 15%,
+                rgba(56, 189, 248, 0.16), transparent 35%),
+            radial-gradient(ellipse at 70% 90%,
+                rgba(168, 85, 247, 0.14), transparent 40%),
+            linear-gradient(135deg, #0b1020 0%, #111827 50%, #10172a 100%);
+        background-attachment: fixed;
+    }
+
+    /* Main content spacing */
+    .block-container {
+        padding-top: 2rem;
+        padding-bottom: 2.5rem;
+        max-width: 1500px;
+    }
+
+    /* Typography */
+    h1, h2, h3 {
+        color: #f8fafc !important;
+        letter-spacing: -0.4px;
+    }
+
+    p, label, .stMarkdown, .stCaption {
+        color: #d1d9e6;
+    }
+
+    /* Glass metric cards */
+    [data-testid="stMetric"] {
+        background: rgba(255, 255, 255, 0.075);
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 18px;
+        padding: 20px 22px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+        transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    [data-testid="stMetric"]:hover {
+        transform: translateY(-3px);
+        border-color: rgba(129, 140, 248, 0.65);
+    }
+
+    [data-testid="stMetricLabel"] {
+        color: #b9c5d8 !important;
+    }
+
+    [data-testid="stMetricValue"] {
+        color: #ffffff !important;
+        font-weight: 700;
+    }
+
+    /* Sidebar glass panel */
+    [data-testid="stSidebar"] {
+        background: rgba(12, 18, 35, 0.82);
+        border-right: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    [data-testid="stSidebar"] > div {
+        background: transparent;
+    }
+
+    /* Sidebar navigation */
+    [data-testid="stSidebar"] [role="radiogroup"] label {
+        background: rgba(255, 255, 255, 0.035);
+        border: 1px solid rgba(255, 255, 255, 0.07);
+        border-radius: 10px;
+        padding: 10px 12px;
+        margin-bottom: 5px;
+        transition: background 0.2s ease;
+    }
+
+    [data-testid="stSidebar"] [role="radiogroup"] label:hover {
+        background: rgba(129, 140, 248, 0.15);
+    }
+
+    /* Glass containers */
+    [data-testid="stVerticalBlockBorderWrapper"] {
+        background: rgba(255, 255, 255, 0.045);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border: 1px solid rgba(255, 255, 255, 0.11);
+        border-radius: 18px;
+    }
+
+    /* Dataframes and tables */
+    [data-testid="stDataFrame"],
+    [data-testid="stTable"] {
+        border: 1px solid rgba(255, 255, 255, 0.13);
+        border-radius: 14px;
+        overflow: hidden;
+        background: rgba(255, 255, 255, 0.035);
+    }
+
+    /* Tabs */
+    button[data-baseweb="tab"] {
+        color: #b9c5d8;
+        border-radius: 10px 10px 0 0;
+        padding: 10px 18px;
+    }
+
+    button[data-baseweb="tab"][aria-selected="true"] {
+        color: #c7d2fe !important;
+        border-bottom: 2px solid #818cf8;
+    }
+
+    /* Inputs and dropdowns */
+    .stTextInput input,
+    .stNumberInput input,
+    .stDateInput input,
+    .stSelectbox [data-baseweb="select"],
+    .stMultiSelect [data-baseweb="select"],
+    .stTextArea textarea {
+        background: rgba(255, 255, 255, 0.07);
+        color: #f8fafc;
+        border: 1px solid rgba(255, 255, 255, 0.17);
+        border-radius: 11px;
+    }
+
+    /* Buttons */
+    .stButton > button,
+    .stDownloadButton > button {
+        background: linear-gradient(
+            135deg, rgba(99, 102, 241, 0.95),
+            rgba(59, 130, 246, 0.90)
+        );
+        color: white;
+        border: 1px solid rgba(255, 255, 255, 0.20);
+        border-radius: 11px;
+        padding: 0.55rem 1.1rem;
+        font-weight: 600;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .stButton > button:hover,
+    .stDownloadButton > button:hover {
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 22px rgba(99, 102, 241, 0.30);
+        border-color: rgba(199, 210, 254, 0.7);
+    }
+
+    /* Alerts */
+    [data-testid="stAlert"] {
+        background: rgba(255, 255, 255, 0.06);
+        backdrop-filter: blur(12px);
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.13);
+    }
+
+    /* Charts */
+    [data-testid="stVegaLiteChart"],
+    [data-testid="stArrowVegaLiteChart"],
+    [data-testid="stPlotlyChart"] {
+        background: rgba(255, 255, 255, 0.035);
+        border: 1px solid rgba(255, 255, 255, 0.10);
+        border-radius: 16px;
+        padding: 10px;
+    }
+
+    /* Dividers */
+    hr {
+        border-color: rgba(255, 255, 255, 0.12) !important;
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: rgba(148, 163, 184, 0.35);
+        border-radius: 10px;
+    }
+
+    /* Respect reduced-motion preferences */
+    @media (prefers-reduced-motion: reduce) {
+        * {
+            transition: none !important;
+            animation: none !important;
+        }
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
+
+
 st.markdown(
     """
     <style>
